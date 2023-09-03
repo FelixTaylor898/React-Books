@@ -1,38 +1,136 @@
-.App {
+.box-div, .fact-top, .search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.search {
+  padding-top: 10px;
+}
+
+.search-button {
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.content-div, .nick-input {
+  display: inline-block;
+  width: 250px;
+  height: 220px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(152, 0, 35);
+  position: relative;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content-div>.id-field, .nick-input>.id-field {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.0em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content-div>.main-name, .nick-input>.main-name {
+  font-size: 1.5em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content-div>span, .heart, .fact-div>.main-name, .nick-input>span {
+  font-size: 1.2em;
+
+}
+
+.fact-top {
+  padding-bottom: 5px;
+}
+
+.main-name {
+  overflow-wrap: break-word;
+}
+
+.content-div>.buttons, .fact-div>.buttons {
+  position: absolute;
+  bottom: 10px;
+  width: 210px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.buttons>button, .search-button {
+  background: none;
+  text-decoration: none;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  color: white;
+  background: rgb(152, 0, 35);
+  border: 2px solid white;
+}
+
+.buttons>button, .search-button {
+  font-size: 1.0em;
+}
+
+.fact-top {
+  font-size: 1.1em;
+}
+
+.search-button:hover {
+  border: 2px solid rgb(152, 0, 35);
+}
+
+.buttons>button:hover, li a:hover, .search-button:hover {
+  color: rgb(152, 0, 35);
+  background: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.buttons>button:hover {
+  border: 2px solid white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(233, 39, 39);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.search-div {
+    display: flex;
+    gap: 5px;
+}
+.nick-input {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+  width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sort-button {
+  width: 115px;
 }
