@@ -1,3 +1,5 @@
+This is a project that allows the user to sort a sample collection of books, similar to Goodreads.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
